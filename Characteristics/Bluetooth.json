@@ -16,6 +16,6 @@
         "CoreIdle" : 0.675,
         "CoreActive" : 3.39
     },
-    "BitRate" : 2,
+    "BitRate" : 2.0,
     "Frequency" : 0
  }
