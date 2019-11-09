@@ -1,6 +1,6 @@
 {
     "InitialState": {
-        "AmpHours": 2.5,
+        "AmpHours": 2500,
         "Power": 7500.0,
         "Voltage": 3
     },

@@ -1,0 +1,21 @@
+ {
+    "Voltage" : 
+    {
+        "Min" : 1.8,
+        "Max" : 3.8,
+        "Input" : 3.0,
+        "I2C" : 3.5,
+        "UART" : 3.0
+    }, 
+    "Current" : 
+    {
+        "RX" : 6.9,
+        "TX" : 7.3,
+        "I2C" : 0.0101,
+        "UART" : 0.1675,
+        "CoreIdle" : 0.675,
+        "CoreActive" : 3.39
+    },
+    "BitRate" : 2,
+    "Frequency" : 0
+ }
