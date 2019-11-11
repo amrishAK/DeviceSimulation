@@ -25,16 +25,16 @@ class Bluetooth(object) :
         pass
 
     def TurnOn (self):
-        #power drop for pairing
+        #power drop for pairing s = br * d
         self.ToActiveMode()
     
     def PowerConsumedTx(self,dataSize):
-        time = (self.BleChar['BitRate'] * dataSize)/3600 # bitrate is in seconds, convert it to hours
+        time = (dataSize / self.BleChar['BitRate'])/3600 # bitrate is in seconds, convert it to hours
         power = time * self._inputVoltage * self.BleChar['Current']['TX'] 
         return power
 
     def PowerConsumedRx(self,dataSize):
-        time = (self.BleChar['BitRate'] * dataSize)/3600 # bitrate is in seconds, convert it to hours
+        time = (dataSize / self.BleChar['BitRate'])/3600 # bitrate is in seconds, convert it to hours
         power = time * self._inputVoltage * self.BleChar['Current']['RX']
         return power
 
