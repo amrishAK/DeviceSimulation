@@ -1,0 +1,18 @@
+{
+    "Voltage" : {
+        "Min" : 1.8,
+        "Max" : 3.6,
+        "Input" : 3.0
+    },
+    
+    "Current" :
+    {
+        "Mode" : {
+            "Run" : "150 µA",
+            "Idle" : 80,
+            "Sleep" : "30 nA"
+        }
+    },
+    "BitSize" :16,
+    "BitRate" : 3200000
+}
