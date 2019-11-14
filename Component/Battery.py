@@ -20,17 +20,15 @@ class Battery (object) :
         self.BatteryChar['InitialState']['Power'] = wattHr
         self.BatteryChar['State']['Power'] = wattHr
 
-    def Discharging(self,powerDischarged):
+    def Discharging(self,**kwargs):
+        powerDischarged = kwargs.get('powerDischarged')
         currentPower = self.BatteryChar['State']['Power']
         self.BatteryChar['State']['Power'] = currentPower - powerDischarged
 
-    def Charging(self,powerCharging):
+    def Charging(self,**kwargs):
+        powerCharging = kwargs.get('powerDischarged')
         currentPower = self.BatteryChar['State']['Power']
         self.BatteryChar['State']['Power'] = currentPower + powerCharging
         
     def GetOutputVoltage(self):
         return self.BatteryChar['InitialState']['Voltage']
-
-        
-if __name__ == "__main__":
-    Battery()
