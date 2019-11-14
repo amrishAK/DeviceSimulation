@@ -1,4 +1,5 @@
-from Helper.JsonHandler import JsonHandler
+from Component.Helper.JsonHandler import JsonHandler
+import datetime
 
 class Battery (object) : 
     
@@ -10,6 +11,7 @@ class Battery (object) :
         self.InitialState()
         
     def __del__ (self):
+        self.BatteryChar['Logs'] = self._logs
         self.jsonHandler.WriteJson(self.characteristicsPath,self.BatteryChar)
 
     def InitialState(self):
@@ -18,12 +20,16 @@ class Battery (object) :
         InitialState =  self.BatteryChar['InitialState']
         wattHr = InitialState['AmpHours'] * InitialState['Voltage']
         self.BatteryChar['InitialState']['Power'] = wattHr
-        self.BatteryChar['State']['Power'] = wattHr
+        self._logs = self.BatteryChar['Logs']
 
     def Discharging(self,**kwargs):
         powerDischarged = kwargs.get('powerDischarged')
         currentPower = self.BatteryChar['State']['Power']
         self.BatteryChar['State']['Power'] = currentPower - powerDischarged
+        currentTimeStamp = datetime.datetime.now()
+        date = currentTimeStamp.strftime('%m/%d/%Y') + " " + currentTimeStamp.strftime('%I:%M:%S %p') 
+        log = {'Power' : self.BatteryChar['State']['Power'], 'Reason' : kwargs.get('reason'), 'TimeStamp' : date }
+        self._logs.append(log)
 
     def Charging(self,**kwargs):
         powerCharging = kwargs.get('powerDischarged')

@@ -1,15 +1,14 @@
-from Helper.JsonHandler import JsonHandler
-from Handler.eventHook import EventHook
+from Component.Helper.JsonHandler import JsonHandler
+from Component.Handler.eventHook import EventHook
 from threading import Timer
 import random
 
 class TemperatureSensor (object) :
 
-    characteristicsPath = "Characteristics/Battery.json"
+    characteristicsPath = "Characteristics/TemperatureSensor.json"
     _inputVoltage = 0
     _coreCurrent = 0
     _batteryEvent = EventHook()
-    _timer = Timer(30,TimerHit)
 
     def __init__(self,inputVoltage):
         self.jsonHandler = JsonHandler()
@@ -17,6 +16,9 @@ class TemperatureSensor (object) :
         self.sensingRange = self.SensorChar['SensingRange']
         self._inputVoltage = inputVoltage
         self.TurnOn()
+
+    def __del__(self):
+        self.TurnOff()
 
     def TurnOn(self) :
         self._timer = Timer(30,self.TimerHit)
@@ -40,13 +42,13 @@ class TemperatureSensor (object) :
         self.I2CPowerConsumed()
 
     def I2CPowerConsumed(self):
-        time = (self.SensorChar['BitSize'] / self.SensorChar['BitRate'])/3600 # bitrate is in seconds, convert it to hours
+        time = (self.SensorChar['BitSize'] / self.SensorChar['BitRate'])/3600.0 # bitrate is in seconds, convert it to hours
         power = time * self._inputVoltage * self._coreCurrent 
-        self._batteryEvent.fire(powerDischarged=power)
+        self._batteryEvent.fire(powerDischarged=power,reason='TS')
 
     def TimerHit(self):
         time = 30/3600
         power = time * self._inputVoltage * self._coreCurrent
-        self._batteryEvent.fire(powerDischarged=power)
+        self._batteryEvent.fire(powerDischarged=power,reason='ts Timer')
         self._timer = Timer(30,self.TimerHit)
         self._timer.start()

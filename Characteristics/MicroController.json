@@ -8,9 +8,9 @@
     "Current" :
     {
         "Mode" : {
-            "Run" : "150 µA",
-            "Idle" : 80,
-            "Sleep" : "30 nA"
+            "Run" : 0.15,
+            "Idle" : 0.08,
+            "Sleep" : 0.00003
         }
     },
     "BitSize" :16,

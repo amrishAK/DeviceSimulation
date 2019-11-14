@@ -1,20 +1,20 @@
-from Helper.JsonHandler import JsonHandler
-from Handler.eventHook import EventHook
+from Component.Helper.JsonHandler import JsonHandler
+from Component.Handler.eventHook import EventHook
 from threading import Timer
 
 class MicroController (object) : 
     
     characteristicsPath = "Characteristics/MicroController.json"
-    _inputVoltage = 0
-    _coreCurrent = 0
     _batteryEvent = EventHook()
-    _timer = Timer(30,TimerHit)
 
     def __init__ (self,inputVoltage) :
         self.jsonHandler = JsonHandler()
         self.ControllerChar = self.jsonHandler.LoadJson(self.characteristicsPath)
         self._inputVoltage = inputVoltage
-        self._coreCurrent = self.ControllerChar['Current']['Mode']['Run']
+        self.TurnOn()
+
+    def __del__(self):
+        self.TurnOff()
 
     def TurnOn(self) :
         self._timer = Timer(30,self.TimerHit)
@@ -40,14 +40,14 @@ class MicroController (object) :
         self.I2CPowerConsumed()
 
     def I2CPowerConsumed(self):
-        time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate'])/3600 # bitrate is in seconds, convert it to hours
-        power = time * self._inputVoltage * self._coreCurrent 
-        self._batteryEvent.fire(powerDischarged=power)
+        time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate'])/3600.0 # bitrate is in seconds, convert it to hours
+        power = time * float(self._inputVoltage) * float(self._coreCurrent) 
+        self._batteryEvent.fire(powerDischarged=power,reason='MC')
 
     def TimerHit(self):
         time = 30/3600
         power = time * self._inputVoltage * self._coreCurrent
-        self._batteryEvent.fire(powerDischarged=power)
+        self._batteryEvent.fire(powerDischarged=power,reason='MC timer')
         self._timer = Timer(30,self.TimerHit)
         self._timer.start()
     
