@@ -1,0 +1,12 @@
+{
+    "Battery": {
+        "CurrentState": {
+            "Power": 7461.692162361072
+        },
+        "InitialState": {
+            "AmpHours": 2500.0,
+            "Power": 7500.0,
+            "Voltage": 3.0
+        }
+    }
+}

@@ -3,26 +3,36 @@ from Component.Bluetooth import Bluetooth
 from Component.Battery import Battery
 from Component.TemperatureSensor import TemperatureSensor
 from Component.Handler.eventHook import EventHook
+from Component.Helper.JsonHandler import JsonHandler
 import time
 import sys
 
 class TemperatureController (MicroController) :
 
-    checker = True
+    _characteristicsPath = "Characteristics/TemperatureController.json"
+
+    def Setup(self):
+        self.bt = Battery(self._ControllerChar['Battery']['CurrentState']['Power'])
+        self.ble = Bluetooth(3.0,30)
+        self.ts = TemperatureSensor(3.0)
 
     def __init__(self):
+        self.jsonHandler = JsonHandler()
+        self._ControllerChar = self.jsonHandler.LoadJson(self._characteristicsPath)
         self.Setup()
         self.ConnectHandlers()
         super().__init__(3.0)
 
         try:
-            while(self.checker):
+            while(True):
                 self.Run()
         except KeyboardInterrupt:
+            self._ControllerChar['Battery']['CurrentState']['Power'] = self.bt.GetCurrentCharge()
             self.__del__()
             exit(1)
     
     def __del__(self):
+        self.jsonHandler.WriteJson(self._characteristicsPath,self._ControllerChar)
         self.ble.__del__()
         self.ts.__del__()
         self.bt.__del__()
@@ -31,12 +41,7 @@ class TemperatureController (MicroController) :
     def ConnectHandlers(self):
         self.ble._batteryEvent.addHandler(self.bt.Discharging)
         self.ts._batteryEvent.addHandler(self.bt.Discharging)
-        super()._batteryEvent.addHandler(self.bt.Discharging)
-
-    def Setup(self):
-        self.bt = Battery()
-        self.ble = Bluetooth(3.0)
-        self.ts = TemperatureSensor(3.0)
+        self._batteryEvent.addHandler(self.bt.Discharging)
 
     def Run(self):
         time.sleep(3)
@@ -46,9 +51,7 @@ class TemperatureController (MicroController) :
         time.sleep(3)
 
     def ReadTemperature(self):
-        super().I2CWrite()
-        self.ts.I2CWrite()
-        super().I2CRead()
+        self.I2CRead()
         return self.ts.I2CRead()
 
     def WriteBluetooth(self,data):

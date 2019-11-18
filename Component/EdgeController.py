@@ -2,7 +2,7 @@ from Component.Helper.JsonHandler import JsonHandler
 from Component.Handler.eventHook import EventHook
 from threading import Timer
 
-class MicroController (object) : 
+class EdgeController (object) : 
     
     characteristicsPath = "Characteristics/MicroController.json"
     _batteryEvent = EventHook()
@@ -50,4 +50,3 @@ class MicroController (object) :
         self._batteryEvent.fire(powerDischarged=power,reason='MC Timer')
         self._timer = Timer(30,self.TimerHit)
         self._timer.start()
-    

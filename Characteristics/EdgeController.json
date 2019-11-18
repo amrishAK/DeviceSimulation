@@ -1,0 +1,26 @@
+{
+    "Voltage" : {
+        "Min" : 2.5,
+        "Max" : 3.6,
+        "Input" : 3.3
+    },
+    
+    "Current" :
+    {
+        "Mode" : {
+            "Active" : 15.0,
+            "LightSleep" : 0.9,
+            "DeepSleep" : 0.02,
+            "ShutDown" : 0.0005,
+            "TXb" : 170,
+            "TXg" : 140
+        }
+    },
+    "BitSize" :
+    {
+        "TXb" : 11.0,
+        "TXg" : 54.0
+    },
+
+    "BitRate" : 3200000
+}

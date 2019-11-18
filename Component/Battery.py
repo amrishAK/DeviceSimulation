@@ -3,38 +3,30 @@ import datetime
 
 class Battery (object) : 
     
-    characteristicsPath = "Characteristics/Battery.json"
+    logPath = "Characteristics/BatteryLog.json"
 
-    def __init__ (self) : 
+    def __init__ (self,currentBatteryPower) : 
+        self._currentBatteryPower = currentBatteryPower
         self.jsonHandler = JsonHandler()
-        self.BatteryChar = self.jsonHandler.LoadJson(self.characteristicsPath)
-        self.InitialState()
+        self.BatteryLog = self.jsonHandler.LoadJson(self.logPath)
+        self._logs = self.BatteryLog['Log']
         
     def __del__ (self):
-        self.BatteryChar['Logs'] = self._logs
-        self.jsonHandler.WriteJson(self.characteristicsPath,self.BatteryChar)
-
-    def InitialState(self):
-        #battery power usually in mAh
-        # Voltage * Amps * hours = Wh
-        InitialState =  self.BatteryChar['InitialState']
-        wattHr = InitialState['AmpHours'] * InitialState['Voltage']
-        self.BatteryChar['InitialState']['Power'] = wattHr
-        self._logs = self.BatteryChar['Logs']
+        self.BatteryLog['Logs'] = self._logs
+        self.jsonHandler.WriteJson(self.logPath,self.BatteryLog)
 
     def Discharging(self,**kwargs):
         powerDischarged = kwargs.get('powerDischarged')
-        currentPower = self.BatteryChar['State']['Power']
-        self.BatteryChar['State']['Power'] = currentPower - powerDischarged
-        currentTimeStamp = datetime.datetime.now()
-        date = currentTimeStamp.strftime('%m/%d/%Y') + " " + currentTimeStamp.strftime('%I:%M:%S %p') 
-        log = {'Power' : self.BatteryChar['State']['Power'], 'Reason' : kwargs.get('reason'), 'TimeStamp' : date }
+        self._currentBatteryPower = self._currentBatteryPower - powerDischarged
+        log = {'CurrentPower' : self._currentBatteryPower, 
+                'PowerConsumed' : powerDischarged,
+                'Reason' : kwargs.get('reason'),
+                'TimeStamp' : (datetime.datetime.now()).strftime('%m/%d/%Y %I:%M:%S %p') }
         self._logs.append(log)
 
     def Charging(self,**kwargs):
         powerCharging = kwargs.get('powerDischarged')
-        currentPower = self.BatteryChar['State']['Power']
-        self.BatteryChar['State']['Power'] = currentPower + powerCharging
-        
-    def GetOutputVoltage(self):
-        return self.BatteryChar['InitialState']['Voltage']
+        self._currentBatteryPower = self._currentBatteryPower + powerCharging
+            
+    def GetCurrentCharge(self):
+        return self._currentBatteryPower
