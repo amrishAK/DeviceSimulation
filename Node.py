@@ -1,4 +1,4 @@
-from Component.TemperatureController import TemperatureController
+from TemperatureController import TemperatureController
 
 def main():
     TemperatureController()

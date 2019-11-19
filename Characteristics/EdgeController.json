@@ -11,16 +11,22 @@
             "Active" : 15.0,
             "LightSleep" : 0.9,
             "DeepSleep" : 0.02,
-            "ShutDown" : 0.0005,
-            "TXb" : 170,
-            "TXg" : 140
+            "ShutDown" : 0.0005
+        },
+        "TX" : {
+            "b" : 170,
+            "g" : 140
         }
     },
-    "BitSize" :
+    "BitRate" :
     {
-        "TXb" : 11.0,
-        "TXg" : 54.0
+        "TX" : 
+            {
+                "b" : 11.0,
+                "g" : 54.0
+            },
+        "UART" : 0.0384
     },
 
-    "BitRate" : 3200000
+    "BitSize" : 16
 }

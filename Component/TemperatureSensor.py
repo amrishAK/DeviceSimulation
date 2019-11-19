@@ -6,7 +6,6 @@ import random
 
 class TemperatureSensor (Sensor) :
 
-
     def __init__(self,inputVoltage):
         super().__init__("TemperatureSensor",3.0,30)
         self.sensingRange = self.SensorChar['SensingRange']

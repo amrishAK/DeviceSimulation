@@ -1,7 +1,6 @@
 import socket  
 
 class SocketClient (object) :
-
     
     host = socket.gethostbyname(socket.gethostname())
     port = 63342   

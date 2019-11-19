@@ -11,7 +11,7 @@
     },
 
     "BitSize" :16,
-    "BitRate" : 100000,
+    "BitRate" : 0.1,
 
     "SensingRange" :{
         "Min" : 0,

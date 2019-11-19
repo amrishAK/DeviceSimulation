@@ -40,7 +40,7 @@ class MicroController (object) :
         self.I2CPowerConsumed()
 
     def I2CPowerConsumed(self):
-        time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate'])/3600.0 # bitrate is in seconds, convert it to hours
+        time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate']['I2C'])/3600.0 # bitrate is in seconds, convert it to hours
         power = time * float(self._inputVoltage) * float(self._coreCurrent) 
         self._batteryEvent.fire(powerDischarged=power,reason='MC I2C')
 
