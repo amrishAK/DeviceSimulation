@@ -12,7 +12,7 @@ class Battery (object) :
         self._logs = self.BatteryLog['Log']
         
     def __del__ (self):
-        self.BatteryLog['Logs'] = self._logs
+        self.BatteryLog['Log'] = self._logs
         self.jsonHandler.WriteJson(self.logPath,self.BatteryLog)
 
     def Discharging(self,**kwargs):

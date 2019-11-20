@@ -55,5 +55,6 @@ class TemperatureController (MicroController) :
         return self.ts.I2CRead()
 
     def WriteBluetooth(self,data):
-        super().I2CWrite()
+        self.UartPowerConsumed(data)
+        data = str(data) + '|Temperature'
         self.ble.Tx(data)

@@ -1,6 +1,8 @@
 from Component.Helper.JsonHandler import JsonHandler
 from Component.Handler.eventHook import EventHook
 from threading import Timer
+from sys import getsizeof
+
 
 class MicroController (object) : 
     
@@ -41,6 +43,12 @@ class MicroController (object) :
 
     def I2CPowerConsumed(self):
         time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate']['I2C'])/3600.0 # bitrate is in seconds, convert it to hours
+        power = time * float(self._inputVoltage) * float(self._coreCurrent) 
+        self._batteryEvent.fire(powerDischarged=power,reason='MC I2C')
+    
+    def UartPowerConsumed(self,data):
+        bitSize = getsizeof(data) / 8
+        time = (bitSize / self.ControllerChar['BitRate']['UART'])/3600.0 # bitrate is in seconds, convert it to hours
         power = time * float(self._inputVoltage) * float(self._coreCurrent) 
         self._batteryEvent.fire(powerDischarged=power,reason='MC I2C')
 

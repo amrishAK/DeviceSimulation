@@ -52,14 +52,14 @@ class Bluetooth(object) :
         self.ToActiveMode()
 
     def PowerConsumedUART(self,data):
-        dataSize = getsizeof(data) * 8
+        dataSize = getsizeof(data) / 8
         time = (dataSize / self.BleChar['BitRate']['UART'])/3600.0 # bitrate is in seconds, convert it to hours
         power = time * self._inputVoltage * self.BleChar['Current']['UART'] 
         self._batteryEvent.fire(powerDischarged=power,reason=('Bluetooth UART'))
     
     def PowerConsumed(self,data,isTX = True):
         type_ = 'TX'if isTX else 'RX' 
-        dataSize = getsizeof(data) * 8
+        dataSize = getsizeof(data) / 8
         time = (dataSize / self.BleChar['BitRate']['BLE'])/3600.0 # bitrate is in seconds, convert it to hours
         power = time * self._inputVoltage * self.BleChar['Current'][type_] 
         self._batteryEvent.fire(powerDischarged=power,reason=('Bluetooth ' + type_))

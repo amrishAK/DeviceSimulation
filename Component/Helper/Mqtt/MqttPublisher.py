@@ -10,10 +10,11 @@ class MqttPublisher (object):
         self._clientId = id_
         self._publishingTopic = topic
 
-    def Publish(self,data):
+    def Publish(self,data,topic):
+        _topic = self._publishingTopic + topic
         self._client = publisher.Client(self._clientId)
         self._client.connect(self.host,self.port)
-        self._client.publish(self._publishingTopic,data)
+        self._client.publish(topic,data)
         self._client.disconnect()
         
 

@@ -1,12 +1,16 @@
 {
     "Battery": {
         "CurrentState": {
-            "Power": 7313.83737069434
+            "Power": 7500.0
         },
         "InitialState": {
             "AmpHours": 2500.0,
             "Power": 7500.0,
             "Voltage": 3.0
         }
+    },
+    "Mqtt": {
+        "Name": "Edge1",
+        "Topic": "DS/Edge1/"
     }
 }

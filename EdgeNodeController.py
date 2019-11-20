@@ -22,7 +22,8 @@ class EdgeNodeController (EdgeController) :
         self._ControllerChar = self.jsonHandler.LoadJson(self._characteristicsPath)
         self.Setup()
         self.ConnectHandlers()
-        self._mqttService = MqttPublisher("EdgeNode","DS/Node1/Temperature")
+        mqtt = self._ControllerChar['Mqtt']
+        self._mqttService = MqttPublisher(mqtt['Name'],mqtt['Topic'])
         super().__init__(3.0)
 
         try:
@@ -52,5 +53,6 @@ class EdgeNodeController (EdgeController) :
         self.UartPowerConsumed(data)
         print('RX --->>>', str(data))
         self.WifiPowerConsumed(data)
-        self._mqttService.Publish(data)
+        dataArray = str(data).split('|')
+        self._mqttService.Publish(dataArray[0],dataArray[1])
 
