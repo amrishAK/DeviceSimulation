@@ -1,0 +1,680 @@
+{
+    "PriorityLog": [
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:45:34 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:45:34 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:45:56 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:17 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:19 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:20 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:20 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:20 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:20 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "2398.3243611110697",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -94729.11788593695,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": 7600,
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 01:46:40 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:45 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:47 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:47 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:47 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:12:47 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:08 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:12 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:12 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:33 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:34 PM"
+        },
+        {
+            "CurrentPriorityTable": {
+                "EMG": {
+                    "HomeSensor": 0,
+                    "ID": "EMG",
+                    "active": 0,
+                    "battery": "1514.5758819444252",
+                    "portNumber": 55919
+                },
+                "HeartRate": {
+                    "HomeSensor": 1,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": -97332.23581649283,
+                    "portNumber": 51692
+                },
+                "oxyMeter": {
+                    "HomeSensor": 0,
+                    "ID": "HeartRate",
+                    "active": 0,
+                    "battery": "3605.9318194443135",
+                    "portNumber": 3333
+                }
+            },
+            "TimeStamp": "11/21/2019 03:13:34 PM"
+        }
+    ]
+}
