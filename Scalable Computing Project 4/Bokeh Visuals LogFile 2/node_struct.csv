@@ -1,0 +1,9 @@
+X,Y,Flag,Size,Label
+5,20,green,30,EEG
+20,30,navy,30,EMG
+20,20,green,15,HeartRate
+20,10,navy,15,oxyMeter
+35,30,navy,15,E
+35,20,navy,15,F
+35,10,green,30,G
+50,20,green,30,H
