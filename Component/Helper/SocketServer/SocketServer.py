@@ -7,17 +7,24 @@ class SocketServer (object):
     host = socket.gethostbyname(socket.gethostname()) 
      
     _socketHandler = EventHook()
+    _p2pHandler = EventHook()
     _isSocketUp = False
+
+    def __init__(self,serverPort):
+        self.port = serverPort
+        print("port is ",serverPort)
     
     def __del__(self):
         if self._isSocketUp:
             self.SocketClosing()
         
     def SocketClosing(self):
-        self.s.close()
-        self._isSocketUp = False
-        self.backgroundThread.join()
-
+        try:
+            self.s.close()
+            self._isSocketUp = False
+            self.backgroundThread.join()
+        except:
+           pass
     def Setup(self):
         self.s = socket.socket()
         self.s.bind((self.host, self.port))         
@@ -32,4 +39,7 @@ class SocketServer (object):
             conn, _ = self.s.accept()  
             data=conn.recv(1024)
             data = data.decode()
-            self._socketHandler.fire(data=data)
+            if (data.find('-') != -1):
+                self._p2pHandler.fire(data=data)
+            else:
+                self._socketHandler.fire(data=data)

@@ -1,0 +1,108 @@
+{
+    "Temperature" : {
+        "Tx" : [
+            {
+                "HeartRate" : 63342
+            },
+            {
+                "EMG" : 63343
+            }
+        ],
+        "Port" : 63341,
+        "BroadCastingNodes" : 0
+    },
+    "EMG" : {
+        "Flooding" : [
+            {
+                "HeartRate" : 63342
+            }
+        ],
+        "Tx" : [
+            {
+                "PeedoMeter" : 63344
+            },
+            {
+                "Gulcometer" : 63345
+            },
+            {
+                "OxyMeter" : 63346
+            }
+        ],
+        "Port" : 63343,
+        "BroadCastingNodes" : 1
+    },
+    "HeartRate" : {
+        "Flooding" : [
+            {
+                "EMG" : 63343
+            }
+        ],
+        "Tx" : [
+            {
+                "PeedoMeter" : 63344
+            },
+            {
+                "Gulcometer" : 63345
+            },
+            {
+                "OxyMeter" : 63346
+            }
+        ],
+        "Port" : 63342,
+        "BroadCastingNodes" : 1
+    },
+    "PaseMaker" : {
+        "Tx" : [
+            {
+                "PeedoMeter" : 63344
+            },
+            {
+                "Gulcometer" : 63345
+            },
+            {
+                "OxyMeter" : 63346
+            }
+        ],
+        "Port" : 63347,
+        "BroadCastingNodes" : 0
+    },
+    "PeedoMeter" : {
+        "Flooding" : [
+            {
+                "Gulcometer" : 63345
+            },
+            {
+                "OxyMeter" : 63346
+            }
+        ],
+        "Tx" : [],
+        "Port" : 63344,
+        "BroadCastingNodes" : 2
+    },
+    "Gulcometer" : {
+        "Flooding" : [
+            {
+                "PeedoMeter" : 63344
+            },
+            {
+                "OxyMeter" : 63346
+            }
+        ],
+        "Tx" : [],
+        "Port" : 63345,
+        "BroadCastingNodes" : 2
+    },
+    "OxyMeter" : {
+        "Flooding" : [
+            {
+                "PeedoMeter" : 63344
+            },
+            {
+                "Gulcometer" : 63345
+            }
+        ],
+        "Tx" : [],
+        "Port" : 63346,
+        "BroadCastingNodes" : 2
+    }
+}

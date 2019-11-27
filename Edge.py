@@ -1,7 +1,7 @@
-from EdgeNodeController import EdgeNodeController
+from OxyMeterController import OxyMeterController
 
 def main():
-    EdgeNodeController()
+    OxyMeterController()
 
 if __name__ == "__main__":
     main()

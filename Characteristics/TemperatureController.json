@@ -1,7 +1,7 @@
 {
     "Battery": {
         "CurrentState": {
-            "Power": 7500.0
+            "Power": 7497.533834255647
         },
         "InitialState": {
             "AmpHours": 2500.0,
@@ -10,7 +10,12 @@
         }
     },
     "Mqtt": {
+        "BrokerIp": {
+            "1": "localHost",
+            "2": "localHost"
+        },
         "Name": "Edge1",
         "Topic": "DS/Edge1/"
-    }
+    },
+    "PrivateKey": 5684
 }

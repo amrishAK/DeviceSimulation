@@ -1,3 +1,568 @@
 {
-    "Log" : []
+    "Log": [
+        {
+            "CurrentPower": 7499.98,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:52:51 PM"
+        },
+        {
+            "CurrentPower": 7499.9546666666665,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:52:51 PM"
+        },
+        {
+            "CurrentPower": 7499.9290319010415,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:52:52 PM"
+        },
+        {
+            "CurrentPower": 7499.90040641276,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:52:52 PM"
+        },
+        {
+            "CurrentPower": 7499.87645328776,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:52:52 PM"
+        },
+        {
+            "CurrentPower": 7499.85021891276,
+            "PowerConsumed": 0.026234374999999997,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:52:58 PM"
+        },
+        {
+            "CurrentPower": 7499.83021891276,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:01 PM"
+        },
+        {
+            "CurrentPower": 7499.804885579427,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:01 PM"
+        },
+        {
+            "CurrentPower": 7499.779250813802,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:02 PM"
+        },
+        {
+            "CurrentPower": 7499.750625325521,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:02 PM"
+        },
+        {
+            "CurrentPower": 7499.726672200521,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:02 PM"
+        },
+        {
+            "CurrentPower": 7499.701515950521,
+            "PowerConsumed": 0.02515625,
+            "Reason": "Bluetooth RX",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.669709852431,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.641226779514,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.612743706597,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.580937608507,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.554323025174,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:03 PM"
+        },
+        {
+            "CurrentPower": 7499.529166775174,
+            "PowerConsumed": 0.02515625,
+            "Reason": "Bluetooth RX",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.4973606770845,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.468877604168,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.440394531251,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.408588433161,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.381973849828,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.355359266495,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:08 PM"
+        },
+        {
+            "CurrentPower": 7499.335359266494,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:09 PM"
+        },
+        {
+            "CurrentPower": 7499.310025933161,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:09 PM"
+        },
+        {
+            "CurrentPower": 7499.284391167536,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:10 PM"
+        },
+        {
+            "CurrentPower": 7499.255765679255,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:10 PM"
+        },
+        {
+            "CurrentPower": 7499.231812554255,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:11 PM"
+        },
+        {
+            "CurrentPower": 7499.147062554255,
+            "PowerConsumed": 0.08475,
+            "Reason": "Bluetooth Timer",
+            "TimeStamp": "11/22/2019 02:53:18 PM"
+        },
+        {
+            "CurrentPower": 7499.142312554255,
+            "PowerConsumed": 0.004750000000000001,
+            "Reason": "HeartRate Timer",
+            "TimeStamp": "11/22/2019 02:53:18 PM"
+        },
+        {
+            "CurrentPower": 7499.138562554255,
+            "PowerConsumed": 0.00375,
+            "Reason": "MC Timer",
+            "TimeStamp": "11/22/2019 02:53:18 PM"
+        },
+        {
+            "CurrentPower": 7499.111947970922,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:19 PM"
+        },
+        {
+            "CurrentPower": 7499.091947970922,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:20 PM"
+        },
+        {
+            "CurrentPower": 7499.066614637589,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:20 PM"
+        },
+        {
+            "CurrentPower": 7499.040979871964,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:21 PM"
+        },
+        {
+            "CurrentPower": 7499.012354383683,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:21 PM"
+        },
+        {
+            "CurrentPower": 7498.988401258683,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:21 PM"
+        },
+        {
+            "CurrentPower": 7498.96178667535,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:29 PM"
+        },
+        {
+            "CurrentPower": 7498.941786675349,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:30 PM"
+        },
+        {
+            "CurrentPower": 7498.916453342016,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:30 PM"
+        },
+        {
+            "CurrentPower": 7498.890818576391,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:31 PM"
+        },
+        {
+            "CurrentPower": 7498.86219308811,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:31 PM"
+        },
+        {
+            "CurrentPower": 7498.83823996311,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:31 PM"
+        },
+        {
+            "CurrentPower": 7498.81823996311,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:34 PM"
+        },
+        {
+            "CurrentPower": 7498.792906629777,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:34 PM"
+        },
+        {
+            "CurrentPower": 7498.767271864152,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:35 PM"
+        },
+        {
+            "CurrentPower": 7498.73864637587,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:35 PM"
+        },
+        {
+            "CurrentPower": 7498.71469325087,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:36 PM"
+        },
+        {
+            "CurrentPower": 7498.69469325087,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.669359917537,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.642745334204,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.617589084204,
+            "PowerConsumed": 0.02515625,
+            "Reason": "Bluetooth RX",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.585782986114,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.557299913197,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.52881684028,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.4970107421905,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.4703961588575,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:39 PM"
+        },
+        {
+            "CurrentPower": 7498.4447613932325,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:40 PM"
+        },
+        {
+            "CurrentPower": 7498.416135904951,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:40 PM"
+        },
+        {
+            "CurrentPower": 7498.392182779951,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:40 PM"
+        },
+        {
+            "CurrentPower": 7498.307432779951,
+            "PowerConsumed": 0.08475,
+            "Reason": "Bluetooth Timer",
+            "TimeStamp": "11/22/2019 02:53:48 PM"
+        },
+        {
+            "CurrentPower": 7498.302682779951,
+            "PowerConsumed": 0.004750000000000001,
+            "Reason": "HeartRate Timer",
+            "TimeStamp": "11/22/2019 02:53:48 PM"
+        },
+        {
+            "CurrentPower": 7498.298932779951,
+            "PowerConsumed": 0.00375,
+            "Reason": "MC Timer",
+            "TimeStamp": "11/22/2019 02:53:48 PM"
+        },
+        {
+            "CurrentPower": 7498.278932779951,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.253599446618,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.226984863285,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.201828613285,
+            "PowerConsumed": 0.02515625,
+            "Reason": "Bluetooth RX",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.170022515195,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.141539442278,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.113056369361,
+            "PowerConsumed": 0.028483072916666668,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.0812502712715,
+            "PowerConsumed": 0.03180609809027778,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:49 PM"
+        },
+        {
+            "CurrentPower": 7498.054635687939,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:50 PM"
+        },
+        {
+            "CurrentPower": 7498.029000922314,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:50 PM"
+        },
+        {
+            "CurrentPower": 7498.000375434032,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:50 PM"
+        },
+        {
+            "CurrentPower": 7497.976422309032,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:50 PM"
+        },
+        {
+            "CurrentPower": 7497.956422309032,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:54 PM"
+        },
+        {
+            "CurrentPower": 7497.931088975699,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:54 PM"
+        },
+        {
+            "CurrentPower": 7497.905454210074,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:55 PM"
+        },
+        {
+            "CurrentPower": 7497.876828721793,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:55 PM"
+        },
+        {
+            "CurrentPower": 7497.852875596793,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:55 PM"
+        },
+        {
+            "CurrentPower": 7497.832875596792,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:58 PM"
+        },
+        {
+            "CurrentPower": 7497.807542263459,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:53:58 PM"
+        },
+        {
+            "CurrentPower": 7497.781907497834,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:53:59 PM"
+        },
+        {
+            "CurrentPower": 7497.753282009553,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:53:59 PM"
+        },
+        {
+            "CurrentPower": 7497.729328884553,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:53:59 PM"
+        },
+        {
+            "CurrentPower": 7497.70271430122,
+            "PowerConsumed": 0.026614583333333334,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:54:00 PM"
+        },
+        {
+            "CurrentPower": 7497.68271430122,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:54:02 PM"
+        },
+        {
+            "CurrentPower": 7497.657380967887,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:54:02 PM"
+        },
+        {
+            "CurrentPower": 7497.631746202262,
+            "PowerConsumed": 0.025634765625000003,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:54:03 PM"
+        },
+        {
+            "CurrentPower": 7497.60312071398,
+            "PowerConsumed": 0.028625488281250007,
+            "Reason": "Bluetooth UART",
+            "TimeStamp": "11/22/2019 02:54:03 PM"
+        },
+        {
+            "CurrentPower": 7497.57916758898,
+            "PowerConsumed": 0.023953125000000002,
+            "Reason": "Bluetooth TX",
+            "TimeStamp": "11/22/2019 02:54:04 PM"
+        },
+        {
+            "CurrentPower": 7497.55916758898,
+            "PowerConsumed": 0.02,
+            "Reason": "MC I2C",
+            "TimeStamp": "11/22/2019 02:54:07 PM"
+        },
+        {
+            "CurrentPower": 7497.533834255647,
+            "PowerConsumed": 0.025333333333333333,
+            "Reason": "HeartRate I2C",
+            "TimeStamp": "11/22/2019 02:54:07 PM"
+        }
+    ]
 }

@@ -9,9 +9,11 @@ class MicroController (object) :
     characteristicsPath = "Characteristics/MicroController.json"
     _batteryEvent = EventHook()
 
-    def __init__ (self,inputVoltage) :
+    def __init__ (self,inputVoltage,sensorID) :
         self.jsonHandler = JsonHandler()
         self.ControllerChar = self.jsonHandler.LoadJson(self.characteristicsPath)
+        keys = self.jsonHandler.LoadJson("Characteristics/PrivateKey.json")
+        self._privateKey = keys[sensorID]
         self._inputVoltage = inputVoltage
         self.TurnOn()
 
@@ -58,4 +60,19 @@ class MicroController (object) :
         self._batteryEvent.fire(powerDischarged=power,reason='MC Timer')
         self._timer = Timer(30,self.TimerHit)
         self._timer.start()
+
+    def Encrypt(self,data):
+        key = self._privateKey
+        ShiftKey = key % 10
+        data = data ^ key
+        if len(str(ShiftKey)) == 1 :
+            data = data << ShiftKey
+        return data
+
+    def Dcrypt(self,data,key):
+        ShiftKey = key % 10
+        if len(str(ShiftKey)) == 1 :
+            data = data >> ShiftKey
+        data = data ^ key
+        return data
     

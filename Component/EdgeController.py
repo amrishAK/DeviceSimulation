@@ -8,9 +8,11 @@ class EdgeController (object) :
     characteristicsPath = "Characteristics/EdgeController.json"
     _batteryEvent = EventHook()
 
-    def __init__ (self,inputVoltage) :
+    def __init__ (self,inputVoltage,sensorID) :
         self.jsonHandler = JsonHandler()
         self.ControllerChar = self.jsonHandler.LoadJson(self.characteristicsPath)
+        keys = self.jsonHandler.LoadJson("Characteristics/PrivateKey.json")
+        self._privateKey = keys[sensorID]
         self._inputVoltage = inputVoltage
         self.TurnOn()
 
@@ -61,9 +63,37 @@ class EdgeController (object) :
         power = time * float(self._inputVoltage) * self.ControllerChar['Current'][_type][version] 
         self._batteryEvent.fire(powerDischarged=power,reason='Edge Controller ' + _type + ' ' + version)
 
+    def I2CRead(self):
+        self.I2CPowerConsumed()
+
+    def I2CWrite(self):
+        self.I2CPowerConsumed()
+
+    def I2CPowerConsumed(self):
+        time = (self.ControllerChar['BitSize'] / self.ControllerChar['BitRate']['I2C'])/3600.0 # bitrate is in seconds, convert it to hours
+        power = time * float(self._inputVoltage) * float(self._coreCurrent) 
+        self._batteryEvent.fire(powerDischarged=power,reason='MC I2C')
+    
+
     def TimerHit(self):
         time = 30/3600
         power = time * self._inputVoltage * self._coreCurrent
         self._batteryEvent.fire(powerDischarged=power,reason='Edge Controller Timer')
         self._timer = Timer(30,self.TimerHit)
         self._timer.start()
+
+    def Encrypt(self,data):
+        key = self._privateKey
+        ShiftKey = key % 10
+        data = data ^ key
+        if len(str(ShiftKey)) == 1 :
+            data = data << ShiftKey
+        return data
+
+    def Dcrypt(self,data):
+        key = self._privateKey
+        ShiftKey = key % 10
+        if len(str(ShiftKey)) == 1 :
+            data = data >> ShiftKey
+        data = data ^ key
+        return data
